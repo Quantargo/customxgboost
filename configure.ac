@@ -11,11 +11,6 @@ then
   OPENMP_CXXFLAGS="\$(SHLIB_OPENMP_CFLAGS)"
 fi
 
-if test `uname -s` = "Darwin"
-then
-  OPENMP_CXXFLAGS="\$(SHLIB_OPENMP_CFLAGS)"
-fi
-
 AC_SUBST(OPENMP_CXXFLAGS)
 AC_CONFIG_FILES([src/Makevars])
 AC_OUTPUT
